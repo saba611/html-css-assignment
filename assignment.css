@@ -1,0 +1,539 @@
+/* Global Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #fbfbfb;
+    line-height: 1.6;
+}
+
+/* Subtitles & Headings */
+.subtitle {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #2e7d32;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: #fff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    margin: 0 15px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+.btn-outline {
+    text-decoration: none;
+    color: #000;
+    padding: 8px 20px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    max-width: 550px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.booking-btn, .btn-filled {
+    display: inline-block;
+    background-color: #a3e496;
+    color: #000;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.hero-img img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ffeaa7;
+}
+
+/* Feature Cards Section */
+.card-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 80px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.dental-card {
+    background: #fff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    border: 1px solid #f0f0f0;
+    text-align: center;
+}
+
+.card-icon {
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.dental-card h4 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.dental-card p {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Treatment Section */
+.treatment-section {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 80px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.treatment-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    text-align: left;
+}
+
+.treatment-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.bg-orange { background-color: #fff4ed; }
+.bg-green { background-color: #eefbf4; }
+.bg-pink { background-color: #fff0f0; }
+
+.t-text h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.t-text p {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 12px;
+}
+
+.t-text a {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: underline;
+}
+
+.t-img img {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* About Us Section */
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 80px;
+}
+
+.about-img img {
+    width: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.about-content h3 {
+    font-size: 18px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+/* Why Choose Us Section */
+.choose-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 80px;
+}
+
+.choose-content ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.choose-content li {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.choose-content li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #2e7d32;
+}
+
+.choose-img img {
+    width: 450px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    text-align: center;
+    max-width: 800px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.testimonials-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.testimonial-box .quote {
+    font-size: 16px;
+    font-style: italic;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.testimonial-box h4 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.testimonial-box span {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Consultation Form Section */
+.form-section {
+    max-width: 1000px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.form-wrapper {
+    display: flex;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    overflow: hidden;
+    border: 1px solid #eee;
+}
+
+.form-doc-img img {
+    width: 350px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-content {
+    padding: 40px;
+    flex-grow: 1;
+}
+
+.form-content h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.form-content input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 13px;
+    outline: none;
+}
+
+.submit-btn {
+    background-color: #a3e496;
+    color: #000;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #fff;
+    border-top: 1px solid #eaeaea;
+    padding: 60px 80px;
+    margin-top: 80px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+.footer-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-col h4 {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-col a {
+    display: block;
+    text-decoration: none;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.footer-col p {
+    font-size: 13px;
+    color: #666;
+}
+
+.footer-col input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.mt {
+    margin-top: 20px;
+}
+
+
+/* Tablet Screens (under 992px) */
+@media (max-width: 992px) {
+    header {
+        padding: 20px 40px;
+    }
+    
+    .hero-section, .about-section, .choose-section {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .cards-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .treatment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Mobile Screens (under 768px) */
+@media (max-width: 768px) {
+    /* Header Responsive */
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    /* Hero Section Responsive */
+    .hero-section {
+        flex-direction: column-reverse;
+        padding: 30px 20px;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 26px;
+        margin-top: 20px;
+    }
+
+    .hero-img img {
+        width: 240px;
+        height: 240px;
+    }
+
+    /* Feature Cards Responsive */
+    .card-section {
+        padding: 20px;
+    }
+
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Treatment Section Responsive */
+    .treatment-section {
+        padding: 0 20px;
+        margin: 40px auto;
+    }
+
+    .treatment-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* About Us & Why Choose Us Responsive */
+    .about-section, .choose-section {
+        flex-direction: column;
+        padding: 0 20px;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .choose-section {
+        flex-direction: column-reverse;
+    }
+
+    .about-img img, .choose-img img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .choose-content li {
+        text-align: left;
+    }
+
+    /* Form Section Responsive */
+    .form-wrapper {
+        flex-direction: column;
+    }
+
+    .form-doc-img img {
+        width: 100%;
+        height: 200px;
+    }
+
+    .form-content {
+        padding: 20px;
+    }
+
+    .input-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Footer Responsive */
+    footer {
+        padding: 40px 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
+    }
+}
